@@ -1,0 +1,193 @@
+/* ------------------------------
+   General
+--------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #333;
+    background: #fff;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* ------------------------------
+   Navigation
+--------------------------------*/
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+
+/* ------------------------------
+   Main introduction
+--------------------------------*/
+
+.intro {
+    padding: 80px 0 60px 0;
+}
+
+.intro h1 {
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-top: 0;
+}
+
+.intro-text p {
+    max-width: 650px;
+}
+
+
+/* ------------------------------
+   Links
+--------------------------------*/
+
+a {
+    color: #315f8c;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Sections
+--------------------------------*/
+
+section {
+    padding: 45px 0;
+    border-top: 1px solid #eee;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* ------------------------------
+   Papers
+--------------------------------*/
+
+.paper {
+    margin-bottom: 40px;
+}
+
+.paper-status {
+    font-style: italic;
+    color: #777;
+    margin-top: 0;
+}
+
+.paper p {
+    max-width: 750px;
+}
+
+.paper-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.paper-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+
+footer {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding: 25px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   Mobile
+--------------------------------*/
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .intro {
+        padding-top: 50px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+}
